@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/facultad-service")
-@CrossOrigin(origins = "*")
+@CrossOrigin( origins = "http://localhost:4200", allowedHeaders = "*")
 public class FacultadRestController {
     @Autowired
     IFacultadService facultadService;
